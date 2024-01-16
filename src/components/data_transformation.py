@@ -12,6 +12,8 @@ import os
 
 from src.utils import save_object
 
+logging.info(f"Tranformation of data is starting")
+
 
 @dataclass
 class DataTransformationConfig:
