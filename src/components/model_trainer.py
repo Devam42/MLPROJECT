@@ -51,6 +51,55 @@ class ModelTrainer:
                 "Cat Boosting": CatBoostClassifier(verbose=False),
                 "AdaBoost Classifier": AdaBoostClassifier()
             }
+            '''
+            This are the parameters of hyperparameter tuning.
+            Not doing this because its taking lot of time due to low specifications of device.
+            and getting good precision, accuracy and recall witout doing hyperparameter tuning.
+
+
+            params={
+                "Decision Tree": {
+                    'criterion':['entropy', 'gini'],
+                    'max_depth': [5, 10, 20],
+                    'min_samples_split': [2, 5, 10],
+                    'min_samples_leaf': [1, 2, 4]
+
+                },
+                "Random Forest":{
+                    'n_estimators': [50,100,200],
+                    'max_depth': [5, 10, 20],
+                    'min_samples_split': [2, 5, 10],
+                    'min_samples_leaf': [1, 2, 4]            
+
+                },
+
+                "K-Neighbors": {
+                    'n_neighbors': [3, 5, 7],
+                    'weights': ['uniform', 'distance'],
+                    'algorithm': ['auto', 'ball_tree', 'kd_tree', 'brute']
+                },
+                "Linear Regression":{},
+
+                "XGBRegressor":{
+                    'learning_rate': [0.1, 0.01, 0.05],
+                    'subsample': [0.6, 0.7, 0.8, 0.9],
+                    'n_estimators': [8, 16, 32, 64, 128, 256]
+
+
+                },
+                "CatBoosting Regressor":{
+                    'depth': [4,6,8],
+                    'learning_rate': [0.01, 0.2, 0.1],
+                    'iterations': [50, 100, 200]
+                },
+                "AdaBoost Regressor":{
+                    'learning_rate':[0.01,0.1,0.2],
+                    'n_estimators': [50,100,200]
+                },
+                "Logistic regression": {}
+                
+            }
+            '''
 
             model_report:dict=evaluate_models(X_train=X_train,y_train=y_train,X_test=X_test,y_test=y_test,
                                              models=models)
