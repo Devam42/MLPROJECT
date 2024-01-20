@@ -80,17 +80,23 @@ D. Give all the inputs to get the prediction of is credit card claim is fraud or
 
 ### 1. Data processing
 a. Ingest raw data with data_ingestion.py.
+
 b. Clean and transform data with data_transformation.py.
 
 ### 2. Model Training
 a. Train the machine learning model with model_trainer.py.
+
 b. Utilize the CatBoost algorithm for enhanced performance.
+
 c. *Note: Hyperparameter tuning has not been performed due to hardware constraints on the development machine. Code for hyperparameter tuning is included in comments in `model_trainer.py` for future implementation when more computational resources are available.*
+
 
 
 ### 3. Pipeline
 a. Predictions can be made using predict_pipeline.py.
+
 b. The entire training process is orchestrated with train_pipeline.py.
+
 
 ### 4. Application
 User-friendly application (application.py) for testing and validating the trained model.
@@ -115,9 +121,13 @@ Feel free to uncomment and execute the relevant sections in the future when acce
 ## Testing 
 
 A. Run python application.py in your terminal.
+
 B. Search http://127.0.0.1:5000 in your local browser to land on welcome page.
+
 C. Search http://127.0.0.1:5000/predictdata in your local browser to land on "Credit Card Fraud Prediction page.
+
 D. Give all the inputs to get the prediction of is credit card claim is fraud or genuine.
+
 
 ## Deployment
 #### AWS Elastic Beanstalk Deployment with AWS CodePipeline
@@ -125,24 +135,34 @@ This project utilizes AWS Elastic Beanstalk for deployment and AWS CodePipeline 
 
 1. Elastic Beanstalk Setup:
 a. Create an Elastic Beanstalk environment for your application.
+
 b. Configure the necessary environment variables, such as AWS credentials and application-specific configurations.
+
 
 2. AWS CodePipeline Setup:
 a. Set up an AWS CodePipeline to automate the deployment process.
+
 b. Configure the pipeline stages, including source, build, and deploy.
+
 c. Connect your GitHub repository as the source.
+
 
 3. Deployment Configuration:
 a. Configure the deployment settings in the Elastic Beanstalk environment within the AWS Management Console.
+
 b. Define environment variables required for the application.
+
 
 4. Automatic Deployment:
 Once the CodePipeline is set up, any changes pushed to the connected GitHub repository's main branch will automatically trigger a deployment to the Elastic Beanstalk environment.
 
 ### Troubleshooting
 If you encounter issues during deployment, consider the following troubleshooting steps:
+
 a. Check AWS Elastic Beanstalk and AWS CodePipeline logs for error messages.
+
 b. Verify that all necessary environment variables are correctly configured.
+
 c. Ensure the IAM role used by AWS CodePipeline has the required permissions.
 
 
