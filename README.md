@@ -45,7 +45,7 @@ V MLPROJECT
 ├── README.md                 # Project documentation (you are here!)
 ├── requirements.txt          # Python dependencies
 └── setup.py                  # Setup script for packaging and distribution
-
+```
 
 ## Installation
 1. Clone the repository
@@ -72,8 +72,8 @@ B. Search http://127.0.0.1:5000 in your local browser to land on welcome page.
 C. Search http://127.0.0.1:5000/predictdata in your local browser to land on "Credit Card Fraud Prediction page.
 D. Give all the inputs to get the prediction of is credit card claim is fraud or genuine.
 
-
 ## Features
+
 ### 1. Data processing
 a. Ingest raw data with data_ingestion.py.
 b. Clean and transform data with data_transformation.py.
@@ -107,7 +107,6 @@ Due to hardware constraints on the development machine, hyperparameter tuning wa
 However, to demonstrate the awareness of hyperparameter tuning and its importance, the code for hyperparameter tuning has been included in the 'model_trainer.py' file as comments. The commented-out sections provide an outline of how hyperparameter tuning could be implemented when computing resources with higher specifications are available.
 
 Feel free to uncomment and execute the relevant sections in the future when access to a more powerful computing environment is available. The current model achieved satisfactory results even without hyperparameter tuning, showcasing its robustness.
-
 
 ## Testing 
 
@@ -154,4 +153,3 @@ Email: dkathane42@gmail.com
 We appreciate your interest and contributions.
 
 Happy coding!
-
