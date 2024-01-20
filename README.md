@@ -68,9 +68,13 @@ python application.py
 The application will guide you through the process of testing the credit card fraud detection model.
 
 A. Run python application.py in your terminal.
+
 B. Search http://127.0.0.1:5000 in your local browser to land on welcome page.
+
 C. Search http://127.0.0.1:5000/predictdata in your local browser to land on "Credit Card Fraud Prediction page.
+
 D. Give all the inputs to get the prediction of is credit card claim is fraud or genuine.
+
 
 ## Features
 
