@@ -134,6 +134,7 @@ D. Give all the inputs to get the prediction of is credit card claim is fraud or
 This project utilizes AWS Elastic Beanstalk for deployment and AWS CodePipeline for continuous delivery. Follow the steps below to deploy the application to AWS Elastic Beanstalk:
 
 1. Elastic Beanstalk Setup:
+
 a. Create an Elastic Beanstalk environment for your application.
 
 b. Configure the necessary environment variables, such as AWS credentials and application-specific configurations.
